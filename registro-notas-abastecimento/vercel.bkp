@@ -1,7 +1,9 @@
 {
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 10
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
